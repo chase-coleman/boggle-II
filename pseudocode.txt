@@ -1,0 +1,22 @@
+shakeing words returns :
+
+line1 = [L, K, N, E]
+line2 = [Q, A, H, H]
+line3 = [V K, P, C]
+line4 = [E, V, X, E]
+
+h_word = horizontal word
+
+h_word1 = "".join(line1[], line1[], line1[], line1[])
+LKNE
+h_word2 = "".join(line2[], line2[], line2[], line2[])
+QAHH
+h_word3 = "".join(line3[], line3[], line3[], line3[])
+VKPC
+h_word4 = "".join(line4[], line4[], line4[], line4[])
+EVXE
+
+h1_back =
+h2_back =
+h3_back =
+h4_back =
