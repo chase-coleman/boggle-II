@@ -23,10 +23,8 @@ class BoggleBoard:
     vertical_word2 = "".join(word1[1] + word2[1] + word3[1] + word4[1])
     vertical_word3 = "".join(word1[2] + word2[2] + word3[2] + word4[2])
     vertical_word4 = "".join(word1[3] + word2[3] + word3[3] + word4[3])
-    BoggleBoard.list_of_words.extend([word1, word2, word3, word4])
-    BoggleBoard.list_of_words.extend([word1[::-1], word2[::-1], word3[::-1], word4[::-1]])
-    BoggleBoard.list_of_words.extend([vertical_word1, vertical_word2, vertical_word3, vertical_word4])
-    BoggleBoard.list_of_words.extend([vertical_word1[::-1], vertical_word2[::-1], vertical_word3[::-1], vertical_word4[::-1]])
+    BoggleBoard.list_of_words.extend([word1, word2, word3, word4, word1[::-1], word2[::-1], word3[::-1], word4[::-1]])
+    BoggleBoard.list_of_words.extend([vertical_word1, vertical_word2, vertical_word3, vertical_word4, vertical_word1[::-1], vertical_word2[::-1], vertical_word3[::-1], vertical_word4[::-1]])
     print(word1)
     print(word2)
     print(word3)
@@ -45,6 +43,7 @@ class BoggleBoard:
         self.print_blank()
   
   def include_word(self, word):
+      # print(BoggleBoard.list_of_words)
       if word in BoggleBoard.list_of_words:
         print(f"{word} has a match!")
       else:
